@@ -1,3 +1,26 @@
+/*ProximaNova Font*/
+@font-face{
+	font-family: ProximaNova-Regular;
+	src: url("../fonts/proxima-nova/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face{
+	font-family: ProximaNova-Bold;
+	src: url("../fonts/proxima-nova/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face{
+	font-family: ProximaNova-Black;
+	src: url("../fonts/proxima-nova/ProximaNova-Black.otf") format("opentype");
+}
+
+body{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
+}
+p,span{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
+}
+
 /*Main Bootstrap*/
 .container-fluid {
     padding: 0;
@@ -18,11 +41,39 @@ h6 {
     font-weight: bolder;
 }
 
+/*Separators*/
+hr.left-separator{
+    border-top: 5px solid #fff;
+    width: 155px;
+    text-align: left;
+    margin-left: 0;
+}
+
 /*Header navbar*/
-.navbar {
-    background: none;
-    border: none;
-    height: 60px;
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font:  16px/20px 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active{
+    color:#937518;
+}
+.navbar.fixed-top{
+    background-color:#0d1528;
+}
+.navbar.fixed-top.scrolled {
+    background-color:#0d1528 !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-toggler{
+    border-color: #FFFFFF;
+}
+.navbar-toggler .fa-bars{
+    color: #FFFFFF;
 }
 
 /*Sections and sections elements*/
@@ -39,7 +90,7 @@ h6 {
     margin-bottom: 30px;
 }
 
-.section-heading:after {
+/*.section-heading:after {
     border-top: 5px solid #FFFFFF;
     display: block;
     position: relative;
@@ -50,7 +101,8 @@ h6 {
     width: 155px;
     height: 5px;
     content: "";
-}
+    margin-left: 0;
+}*/
 
 .section-subtitle {
     text-align: center;
@@ -58,9 +110,13 @@ h6 {
 
 
 #section-hero-home {
-    height: 500px;
+    height: 650px;
     align-items: center;
     background-color: #0d1528;
+    background-image: url("../images/hero-home-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section-hero-home .section-heading,
@@ -122,11 +178,62 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #section-action .section-heading-left {
+    color: #A5AFC1;
+}
+#section-action .rw-sentence.section-heading-left {
     color: #FFFFFF;
 }
 
+#section-action .section-description{
+    margin-top: 70px;
+    color:#FFFFFF;
+}
+
+
+/*Sections action2*/
+#section-action2{
+    background-color: #0C1628;
+}
+#section-action2 .section-heading{
+    color: #FFFFFF;
+}
+#section-action2 .section-description{
+    color:#A5AFC1;
+}
+
+#section-social-networks{
+    background-color: #172B51;
+}
+
+#section-social-networks p{
+    text-align: center;
+    color: #A5AFC1;
+}
+/*Buttons*/
+.btn-action{
+    background-color: #CD2434;
+    color: #FFFFFF;
+    border-radius: 7px;
+    box-shadow: 0px 7px 45px #00000029;
+    text-transform: uppercase;
+    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+}
+.btn-action:hover,
+.btn-action:focus{
+    color: #FFFFFF;  
+}
+.btn-outline-secondary{
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font: Bold 18px/36px Proxima Nova;
+    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus{
+    background: none;
+}
 /*Footer*/
 footer {
     margin-top: 50px;
@@ -232,4 +339,38 @@ footer {
 .show-neighbors .carousel-item-left.active {
     -webkit-transform: translate3d(-33%, 0, 0);
     transform: translate3d(-33%, 0, 0);
+}
+
+
+
+/*Media queries*/
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) { 
+    .navbar.fixed-top{
+        background: none;
+        border: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+    
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
