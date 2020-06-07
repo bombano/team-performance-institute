@@ -12,13 +12,6 @@
     /*background-color: #c1c1c1;*/
 }
 
-.offset-c1{
-    grid-column-start: 2;
-}
-
-.offset-c2{
-    grid-column-start: 3;
-}
 
 .columns-q2{
     grid-column-start: span 2;
@@ -99,4 +92,13 @@
         grid-template-columns: repeat(6,minmax(15.8333%, 1fr)); 
        
     }
+
+    .offset-xl-c1{
+        grid-column-start: 2;
+    }
+    
+    .offset-xl-c2{
+        grid-column-start: 3;
+    }
+    
 }
