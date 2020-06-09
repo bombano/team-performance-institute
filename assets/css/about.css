@@ -68,6 +68,8 @@
 }
 #section-2 .decor-bottom-left{
     position: absolute;
+    top:-30px;
+    left:-85px;
     bottom: 0;
     width: 170px;
     height: 170px;
@@ -101,15 +103,38 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top:110px;
+}
+#section-4 .section-heading{
+    position: relative;
+    margin-bottom: 60px;
+}
+#section-4 .section-subtitle{
+    color: #A5AFC1;
+}
+#section-4 .section-heading>p{
+    text-align: center;
+    color: #F8F8F8;
+}
+#section-4 .grid-container{
+    position: relative;
 }
 
-#section-4 .decor-full-left{
-    position: absolute;
-    top: -20px;
-    left: -430px;
-    width: 830px;
-    height: 720px;
+#section-4 .btn-secondary{
+    background-color: #ffffff;
+    border: solid 1px #707070;
+    border-radius: 100px;
+    color: #172B51;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
+#section-4 .decor-full-left{
+    display: none;
+}
+#section-4 .decor-center-left{
+    display: none;
+}
+  
 /*Section 5*/
 #section-5 .grid-container{
     padding-right: 0;
@@ -126,7 +151,12 @@
 }
 /*Section 6*/
 #section-6{
+    min-height: 740px;
     background-color: #ECEEF2;
+    padding-top:125px ;
+}
+#section-6 .grid-container{
+    margin-top: 80px;;
 }
 
 /*Section 7*/
@@ -173,9 +203,41 @@
         margin-left: -80px;
         padding:85px;
     }
+    #section-4 .section-heading>p{
+        width: 38%;
+        margin: auto;
+        margin-top: 60px;
+    }
+    #section-4 .grid-column{
+        width: 60%;
+        margin: auto;
+    }
+    #section-4 .decor-full-left{
+        position: absolute;
+        top: -20px;
+        left: -430px;
+        width: 830px;
+        height: 720px;
+        z-index: 0;
+        display: initial;
+    }
+    #section-4 .decor-center-left{
+        position: absolute;
+        top: 280px;
+        width: 140px;
+        z-index: 0;
+        display: initial;
+    }
+    #section-6 .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        row-gap: 0;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    #section-6{
+        padding-left: 210px;
+        padding-right: 210px;
+    }
 }

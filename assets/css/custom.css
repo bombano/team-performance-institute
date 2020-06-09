@@ -25,6 +25,11 @@ p,span{
     font-family: 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
 }
 
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+
 /*Main Bootstrap*/
 .container-fluid {
     padding: 0;
@@ -91,6 +96,7 @@ h6,h6>span {
 .font-black{
     font-family: 'ProximaNova-Black', Arial, Helvetica, sans-serif;
 }
+
 /* Borders*/
 .border-bottom-blue:after{
     border-top: 5px solid #172B51;
@@ -102,6 +108,12 @@ h6,h6>span {
     margin-bottom: 4.4vh;
     content: "";
 }
+.heading-border-left {
+    border-left: solid 5px #172B51;
+    padding: 5px 25px;
+    color: #172B51;
+}
+
 /*Separators*/
 hr.left-separator{
     border-top: 5px solid #ffffff;
@@ -112,7 +124,17 @@ hr.separator-blue{
     border-top: 5px solid #172B51;
     width: 11vw;
 }
+hr.separator-white{
+    border-top: 5px solid #ffffff;
+    width: 11vw;
+}
 
+
+
+/*Decors*/
+.decor{
+    position: absolute;
+}
 /*Header navbar*/
 .navbar-nav .nav-link {
     color: #FFFFFF;
@@ -147,11 +169,14 @@ hr.separator-blue{
 
 
 /*Buttons*/
+.btn{
+    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
 .btn-action,
 .btn-action-outline{
     border-radius: 7px;
     text-transform: uppercase;
-    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
     padding-left: 30px !important;
     padding-right: 30px !important;
     padding-top: 15px;
@@ -181,14 +206,36 @@ hr.separator-blue{
     border-color: #FFFFFF;
     color: #FFFFFF;
     text-transform: uppercase;
-    font: Bold 18px Proxima Nova;
-    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
     padding-left: 30px !important;
     padding-right: 30px !important;
 }
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus{
     background: none;
+}
+
+/*Media*/
+.media {
+    background-color: #fff;
+    border: solid 1px #c1c1c1;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.media .media-body {
+    padding: 0 20px;
+    color:#172B51;
+}
+
+.media-img {
+    align-self: center !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /*Footer*/
@@ -204,6 +251,10 @@ footer {
 
 .footer-link {
     color: #808b9f;
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: #ffffff;
 }
 
 .footer-column {

@@ -306,25 +306,6 @@
     background-color: #ECEEF2;
     position: relative;
 }
-.media-service {
-    background-color: #fff;
-    border: solid 1px #c1c1c1;
-    margin-top: 20px;
-    padding: 15px;
-}
-
-.media-service .media-body {
-    padding: 0 20px;
-    color:#172B51;
-}
-
-.media-service-img {
-    align-self: center !important;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .services-link {
     float: right;
@@ -367,17 +348,6 @@
     right: 0;
     filter: blur(11px);
 }
-
-#section-social-networks{
-    background-color: #172B51;
-}
-
-#section-social-networks p{
-    text-align: center;
-    color: #A5AFC1;
-}
-
-
 
 /*Carousel*/
 /* .show-neighbors .carousel-item{

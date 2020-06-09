@@ -8,6 +8,13 @@
     text-align: center;
     margin-bottom: 30px;
 }
+.section-subtitle{
+    text-align: center;
+}
+.section-subtitle,
+.section-subtitle-left{
+    font-family: 'ProximaNova-Medium', Arial, Helvetica, sans-serif;
+}
 
 /*Section Hero*/
 .section-hero {
@@ -84,6 +91,16 @@ min-width: 0vw;
 #section-cta .section-description{
     color:#A5AFC1;
 }
+
+#section-social-networks{
+    background-color: #172B51;
+}
+
+#section-social-networks p{
+    text-align: center;
+    color: #A5AFC1;
+}
+
 @media (min-width: 1440px) {
     /*Hero*/
     .hero-title {
