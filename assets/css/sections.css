@@ -1,0 +1,95 @@
+/***************Sections and sections elements***************/
+/*General*/
+.section-wrapper {
+    padding: 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Section Hero*/
+.section-hero {
+    margin-top: -60px;
+    background-color: #0C1628;
+    min-height: 500px;
+}
+.section-hero>.grid-container{
+    position: relative;
+    z-index: 2;
+    padding: 200px 16% 0px 14%;
+    color:#ffffff;   
+}
+.hero-title {
+    font-size: calc(1.5rem + 2.5vw);
+    min-width: 0vw;
+}
+.hero-subtitle {
+font-size: calc(1.2625rem + 0.125vw);
+min-width: 0vw;
+}
+.section-hero .border-bottom-left:after {
+    left: 3.3vw;
+    width: 11vw;
+    margin-bottom: 4.4vh;
+}
+.hero-decor-circle {
+    position: absolute;
+    z-index: 0;
+    top: -390px;
+    left: -310px;
+    width: 750px;
+    height: 750px;
+}
+
+.hero-decor-waves {
+    position: absolute;
+    z-index: 0;
+    top: 310px;
+    right: 0;
+    width: 145px;
+    height: 80px;
+}
+
+/*Headings*/
+.heading-border-left{
+    border-left: solid 5px #11203D;
+    padding: 5px 25px;
+    color:#11203D;
+}
+.heading-border-bottom-left:after {
+    border-top: 5px solid #FFFFFF;
+    display: block;
+    position: relative;
+    top: 15px;
+    bottom: 0;
+    left: 0;
+    width: 155px;
+    height: 5px;
+    content: "";
+    margin-bottom: 50px;
+}
+
+/*Sections Call to action*/
+#section-cta{
+    background-color: #0C1628;
+}
+#section-cta .grid-container{
+    align-items: center;
+}
+#section-cta .section-title{
+    color: #FFFFFF;
+}
+#section-cta .section-description{
+    color:#A5AFC1;
+}
+@media (min-width: 1440px) {
+    /*Hero*/
+    .hero-title {
+        font-size: 3.75rem;
+    }
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+}
