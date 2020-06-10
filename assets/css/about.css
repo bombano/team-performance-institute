@@ -40,8 +40,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 90px;
-    padding-right: 90px;
     padding-top: 30px;
 }
 #section-2 .flex-container>.flex-column:first-child{
@@ -236,8 +234,5 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #section-6{
-        padding-left: 210px;
-        padding-right: 210px;
-    }
+   
 }
