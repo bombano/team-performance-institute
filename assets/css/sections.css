@@ -1,46 +1,53 @@
-/***************Sections and sections elements***************/
-/*General*/
+/* **************Sections and sections elements************** */
+/* General */
 .section-wrapper {
-    padding: 50px;
+    padding: 150px;
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 30px;
 }
-.section-subtitle{
+
+.section-subtitle {
     text-align: center;
 }
+
 .section-subtitle,
-.section-subtitle-left{
+.section-subtitle-left {
     font-family: 'ProximaNova-Medium', Arial, Helvetica, sans-serif;
 }
 
-/*Section Hero*/
+/* Section Hero */
 .section-hero {
     margin-top: -60px;
     background-color: #0C1628;
     min-height: 500px;
 }
-.section-hero>.grid-container{
+
+.section-hero>.grid-container {
     position: relative;
     z-index: 2;
     padding: 200px 16% 0px 14%;
-    color:#ffffff;   
+    color: #ffffff;
 }
+
 .hero-title {
     font-size: calc(1.5rem + 2.5vw);
     min-width: 0vw;
 }
+
 .hero-subtitle {
-font-size: calc(1.2625rem + 0.125vw);
-min-width: 0vw;
+    font-size: calc(1.2625rem + 0.125vw);
+    min-width: 0vw;
 }
+
 .section-hero .border-bottom-left:after {
     left: 3.3vw;
     width: 11vw;
     margin-bottom: 4.4vh;
 }
+
 .hero-decor-circle {
     position: absolute;
     z-index: 0;
@@ -59,12 +66,13 @@ min-width: 0vw;
     height: 80px;
 }
 
-/*Headings*/
-.heading-border-left{
+/* Headings */
+.heading-border-left {
     border-left: solid 5px #11203D;
     padding: 5px 25px;
-    color:#11203D;
+    color: #11203D;
 }
+
 .heading-border-bottom-left:after {
     border-top: 5px solid #FFFFFF;
     display: block;
@@ -78,35 +86,41 @@ min-width: 0vw;
     margin-bottom: 50px;
 }
 
-/*Sections Call to action*/
-#section-cta{
+/* Sections Call to action */
+#section-cta {
     background-color: #0C1628;
 }
-#section-cta .grid-container{
+
+#section-cta .grid-container {
     align-items: center;
 }
-#section-cta .section-title{
+
+#section-cta .section-title {
     color: #FFFFFF;
 }
-#section-cta .section-description{
-    color:#A5AFC1;
+
+#section-cta .section-description {
+    color: #A5AFC1;
 }
 
-#section-social-networks{
+#section-social-networks {
     background-color: #172B51;
 }
 
-#section-social-networks p{
+#section-social-networks p {
     text-align: center;
     color: #A5AFC1;
 }
 
 @media (min-width: 1440px) {
-    /*Hero*/
+    /* Hero */
     .hero-title {
         font-size: 3.75rem;
     }
+
     .hero-subtitle {
         font-size: 1.375rem;
     }
 }
+
+/* Refactoring */
