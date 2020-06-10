@@ -1,9 +1,13 @@
 /* **************Sections and sections elements************** */
 /* General */
 .section-wrapper {
-    padding: 150px;
+    padding: 150px 0;
+    position: relative;
 }
-
+.section-wrapper-small{
+    padding:50px 0;
+    position: relative;
+}
 .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -93,6 +97,7 @@
 
 #section-cta .grid-container {
     align-items: center;
+    text-align: center;
 }
 
 #section-cta .section-title {
@@ -103,10 +108,13 @@
     color: #A5AFC1;
 }
 
+/*Section social networks*/
 #section-social-networks {
     background-color: #172B51;
 }
-
+#section-social-networks .grid-container{
+    column-gap: 0;
+}
 #section-social-networks p {
     text-align: center;
     color: #A5AFC1;

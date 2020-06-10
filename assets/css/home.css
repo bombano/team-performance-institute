@@ -358,11 +358,10 @@
 /* Section action */
 #section-action {
     min-height: 400px;
-    background-image: url("../images/background-section-action.jpg");
+    background-image: url("../images/background-section-action.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 #section-action .section-title-left {
@@ -376,7 +375,6 @@
 #section-action .section-description {
     margin-top: 70px;
     color: #A5AFC1;
-    width: 40%;
 }
 
 #section-action .decor-top-right {
@@ -451,6 +449,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    #section-action .section-description {
+        width: 40%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
