@@ -262,7 +262,7 @@
 #section-steps .section-subtitle{
     color:#172B51;
 }
-#section-steps .card-active{
+#section-steps .card:hover{
     box-shadow: 0px 7px 75px #1D36654D;
 }
 #section-steps .card-title{
