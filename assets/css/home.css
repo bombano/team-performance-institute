@@ -460,13 +460,7 @@
 /* 
  * Refactoring 
  */
-/* Helpers */
-.padding-50 {
-    padding: 50px 0px;
-}
-.padding-150 {
-    padding: 150px 0px;
-}
+
 /* Section */
 .c-brands--simple {
     display: grid;

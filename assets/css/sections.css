@@ -28,7 +28,7 @@
 .section-hero>.grid-container {
     position: relative;
     z-index: 2;
-    padding: 200px 16% 0px 14%;
+    padding-top: 200px;
     color: #ffffff;
 }
 
