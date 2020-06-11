@@ -35,4 +35,25 @@ function initOwlCarousel(){
             },
         }
     });
+    $('#carousel-testimonials').owlCarousel({
+        loop:true,
+        margin:30,
+        responsiveClass:true,
+        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+            },
+            768:{
+                items:1,
+                nav:true,
+            },
+            992:{
+                items:1,
+                nav:false,
+                stagePadding: 150,
+            },
+        }
+    });
 }
