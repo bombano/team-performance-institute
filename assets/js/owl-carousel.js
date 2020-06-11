@@ -2,6 +2,9 @@ function initOwlCarousel(){
     $('#carousel-cases-studies').owlCarousel({
         loop:true,
         margin:30,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         navText: ['','<i class="fas fa-chevron-right"></i>'],
         responsiveClass:true,
         responsive:{
@@ -18,6 +21,9 @@ function initOwlCarousel(){
     $('#carousel-featured-courses').owlCarousel({
         loop:true,
         margin:30,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         navText: ['','<i class="fas fa-chevron-right"></i>'],
         responsiveClass:true,
         responsive:{
@@ -38,8 +44,11 @@ function initOwlCarousel(){
     $('#carousel-testimonials').owlCarousel({
         loop:true,
         margin:30,
-        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:7000,
+        autoplayHoverPause:true,
         navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        responsiveClass:true,
         responsive:{
             0:{
                 items:1,

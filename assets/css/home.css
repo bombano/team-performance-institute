@@ -440,59 +440,6 @@
     filter: blur(11px);
 }
 
-/* Carousel */
-/* .show-neighbors .carousel-item{
-    display: grid;
-    grid-template-columns: 25% 48% 25%;
-    column-gap: 1%;
-} */
-/*.show-neighbors {
-    overflow: hidden;
-}
-
-.show-neighbors .carousel-indicators {
-    margin-right: 25%;
-    margin-left: 25%;
-}
-
-.show-neighbors .carousel-control-prev,
-.show-neighbors .carousel-control-next {
-    background: rgba(255, 255, 255, 0.3);
-    width: 10%;
-    z-index: 11;
-}
-
-.show-neighbors .carousel-inner {
-    width: 150%;
-    left: -25%;
-}
-
-.show-neighbors .item-third {
-    float: left;
-    position: relative;
-    width: 33.33333333%;
-    width: 32%;
-}
-
-.show-neighbors .neighbor-prev {
-    margin-right: 2%;
-}
-
-.show-neighbors .neighbor-next {
-    margin-left: 2%;
-}
-
-.show-neighbors .carousel-item-next:not(.carousel-item-left),
-.show-neighbors .carousel-item-right.active {
-    -webkit-transform: translate3d(33%, 0, 0);
-    transform: translate3d(33%, 0, 0);
-}
-
-.show-neighbors .carousel-item-prev:not(.carousel-item-right),
-.show-neighbors .carousel-item-left.active {
-    -webkit-transform: translate3d(-33%, 0, 0);
-    transform: translate3d(-33%, 0, 0);
-}*/
 
 /* Responsive */
 /* Small devices (landscape phones, 576px and up) */
