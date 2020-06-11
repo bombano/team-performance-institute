@@ -160,12 +160,55 @@
 
 /*Section 7*/
 #section-7{
-    min-height: 740px;
+    min-height: 650px;
     background-image: url(../images/background-about-s7.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top: 70px;
+}
+#section-7 .section-title-left{
+    margin-bottom: 70px;
+}
+#section-7 .owl-carousel{
+    position: relative;
+}
+#section-7 .owl-carousel-item{
+    position: relative;
+}
+#section-7 .owl-carousel-item:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #11203D00 0%, #11203D 100%) 0% 0% no-repeat padding-box;
+}
+#section-7 .owl-carousel-link{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+#section-7 .owl-carousel-icon{
+    width: 150px;
+}
+#section-7 .decor-top-right{
+    top: -80px;
+    right: -100px;
+    width: 220px;
+    filter: blur(13px);
+}
+#section-7 .owl-nav{
+    position: absolute;
+    top: 45%;
+    right: -40px;
+}
+#section-7 .owl-next>svg{
+    color: #172B51;
+    font-size: 25px;
 }
 
 /*Responsive*/

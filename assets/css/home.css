@@ -31,16 +31,6 @@
     margin-bottom: 50px;
 }
 
-.border-bottom-blue:after {
-    border-top: 5px solid #172B51;
-    display: block;
-    position: relative;
-    top: 15px;
-    bottom: 0;
-    width: 11vw;
-    margin-bottom: 4.4vh;
-    content: "";
-}
 
 .border-bottom-white:after {
     border-top: 5px solid #ffffff;

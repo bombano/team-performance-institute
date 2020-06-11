@@ -108,6 +108,10 @@ h6,h6>span {
 .text-blue2{
     color:#11203D;
 }
+
+.text-light-blue{
+    color: #A5AFC1;
+}
 .font-black{
     font-family: 'ProximaNova-Black', Arial, Helvetica, sans-serif;
 }
