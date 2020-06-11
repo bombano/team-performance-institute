@@ -349,10 +349,8 @@
     padding-top: 80px;
 }
 
-.services-link {
+#section-services .link-default{
     float: right;
-    color: #614D10;
-    margin-top: 50px;
 }
 
 #section-services .decor.decor-top-left {

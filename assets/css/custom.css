@@ -108,6 +108,9 @@ h6,h6>span {
 .text-blue2{
     color:#11203D;
 }
+.text-blue3{
+    color: #0C1628;
+}
 
 .text-light-blue{
     color: #A5AFC1;
@@ -124,7 +127,7 @@ h6,h6>span {
     top: 15px;
     bottom: 0;
     width: 11vw;
-    margin-bottom: 4.4vh;
+    margin-bottom:50px;
     content: "";
 }
 .heading-border-left {
@@ -244,6 +247,24 @@ hr.separator-white{
     background: none;
 }
 
+/*Links*/
+.link-default{
+    font-family: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+    color: #614D10;
+    margin-top: 50px;
+}
+.link-default:hover,
+.link-default:focus{
+    color: #c39b20;
+}
+.link-default:after{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f061";
+}
 /*Media*/
 .media {
     background-color: #fff;
