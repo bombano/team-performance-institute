@@ -167,7 +167,7 @@ hr.separator-white{
 /*Navbar*/
 .navbar-nav .nav-link {
     color: #FFFFFF;
-    font:  16px 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+    font:  1rem 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
@@ -182,8 +182,6 @@ hr.separator-white{
 
 .navbar.fixed-top{
     background-color:#0d1528;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 .navbar.fixed-top.scrolled {
     background-color:#0d1528 !important;
@@ -191,6 +189,9 @@ hr.separator-white{
 }
 .navbar-nav{
     align-items: center;
+}
+.navbar-brand img{
+    width: 200px;
 }
 
 .navbar-toggler{
@@ -371,14 +372,24 @@ footer {
         background: none;
         border: none;
     }
+    .navbar-nav .nav-link{
+        font-size: 0.7rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     /*navbar*/
+    .navbar.fixed-top{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
     .navbar-expand-md .navbar-nav .nav-link{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-nav .nav-link{
+        font-size: 1rem; 
     }
     /*Footer*/
     .footer-column {
@@ -408,9 +419,13 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    /*Navbar*/
     .navbar-expand-md .navbar-nav .nav-link{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .navbar-brand img{
+        width: auto;
     }
 }
 
