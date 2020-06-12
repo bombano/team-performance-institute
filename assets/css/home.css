@@ -214,15 +214,11 @@
 #section-leaders .section-subtitle-left {
     color: #FFFFFF;
 }
-#section-leaders #description-wrapper{
-    padding-left: 60px;
-    padding-top: 90px;
-}
-#section-leaders #slider-wrapper,
-#section-leaders #slider-wrapper>.slider-for{
+
+#section-leaders #slider-wrapper>.team-slider{
     position: relative;
 }
-#section-leaders #slider-wrapper>.slider-nav{
+#section-leaders #slider-wrapper>.slider-navs{
     position: absolute;
     z-index: 999;
     bottom: 90px;
@@ -231,8 +227,26 @@
 .leader-description {
     color: #A5AFC1;
 }
-
-.slide-leader {
+.team-slider.slider{
+    display: grid;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+}
+.team-slider .slide-item{
+    transition: opacity .15s linear;
+}
+.slider-navs{
+    display: flex;
+    justify-content: center;
+}
+.slide-nav:hover{
+    cursor: pointer;
+}
+.slide-item:not(.active){
+    display: none;
+    opacity: 0;
+}
+.team-slider .slide-nav {
     min-height: 180px;
     max-height: 180px;
     width: 160px !important;
@@ -248,21 +262,22 @@
     text-align: center;
     border-radius: none;
     position: relative;
+    border-radius: 5px;
 }
 
-.slide-leader.slick-current {
+.team-slider .slide-nav.active {
     border-top: 5px #614D10 solid;
 }
 
-.slide-leader:nth-child(1) {
+.team-slider .slide-nav:first-child {
     background-image: url("../images/leader-1.jpg");
 }
 
-.slide-leader:nth-child(2) {
+.team-slider .slide-nav:nth-child(2) {
     background-image: url("../images/leader-2.jpg");
 }
 
-.slide-leader:nth-child(3) {
+.team-slider .slide-nav:nth-child(3) {
     background-image: url("../images/leader-3.jpg");
 }
 
@@ -411,6 +426,20 @@
     filter: blur(12px);
     z-index: 2;
 }
+#section-services .media{
+    position: relative;
+}
+/*#section-services .media:before{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 110px;
+    content: url(/assets/images/decor/decor-circle-s.svg);
+    z-index: 0;
+}*/
+#section-services .media-img{
+    position: relative;
+}
 /* Section action */
 #section-action {
     min-height: 400px;
@@ -502,6 +531,16 @@
         width: 110px;
         content: url(/assets/images/decor/decor-quote-blue.svg);
         z-index: -1;
+    }
+    /*Section leaders*/
+    #section-leaders #slider-wrapper{
+        position: absolute;
+        bottom: 110px;
+    }
+    #section-leaders #description-wrapper,
+    #section-leaders .section-heading{
+        padding-left: 60px;
+        /*padding-top: 90px;*/
     }
 }
 
