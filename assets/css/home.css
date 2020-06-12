@@ -1,15 +1,27 @@
+/* **************Helpers************** */
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-2 {
+    z-index: 2;
+}
+.z-index-3 {
+    z-index: 3;
+}
+.z-index-4 {
+    z-index: 4;
+}
+.z-index-5 {
+    z-index: 5;
+}
+
 /* **************Sections home************** */
 .section-hero {
-    margin-top: -60px;
+    background-color: #0C1628;
 }
 
 .section-subtitle {
     text-align: center;
-}
-
-.section-subtitle-left,
-.section-subtitle {
-    font-family: 'ProximaNova-Medium', Arial, Helvetica, sans-serif;
 }
 
 .section-heading-border-left {
@@ -43,26 +55,25 @@
 }
 
 #section-hero-home {
-    align-items: center;
+    display: flex;
+    align-items: flex-end;
     background-color: #0d1528;
-    position: relative;
-    padding-bottom: 20px;
+    padding: 190px 0 90px 0;
+    overflow: hidden;
 }
 
-#section-hero-home .section-hero-supertitle {
-    /* font-size: 125px; */
-    /* line-height: 150px; */
-    line-height: 12vw;
-    font-size: 9.8vw;
+.hero-tile-small,
+.hero-tile-big  {
     font-family: 'ProximaNova-Black', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    color: #FFFFFF;
-    position: relative;
+    fill: white;
+    font-weight: 900;
 }
-
-#section-hero-home .section-hero-supertitle span {
-    /* font-size: 285px; */
-    font-size: 22vw;
+text.hero-tile-small {
+    font-size: 30%;
+}
+text.hero-tile-big {
+    font-size: 100%;
 }
 
 #section-hero-home .section-hero-title {
@@ -80,7 +91,6 @@
     color: #FFFFFF;
     font-family: 'ProximaNova-Medium', Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-size: 1.5vw;
 }
 
 #section-hero-home .hero-subtitle-wrapper {
@@ -95,16 +105,13 @@
 
 .hero-decor-circle {
     position: absolute;
-    z-index: 0;
     top: -220px;
     left: -260px;
     width: 730px;
     height: 730px;
 }
-
 .hero-decor-arrow {
     position: absolute;
-    z-index: 0;
     top: 130px;
     right: 30px;
     filter: blur(11px);
@@ -119,10 +126,13 @@
 
 .hero-home-overlay-image {
     position: absolute;
-    z-index: 1;
-    top: 20vh;
-    left: 14vw;
-    width: 85vw;
+    left: 0;
+    right: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    bottom: 0px;
+    width: 90%;
 }
 
 .hero-subtitle-wrapper {
@@ -133,11 +143,9 @@
 }
 
 #section-hero-home .grid-container {
-    position: relative;
-    padding: 200px 16% 0px 14%;
+    /* padding: 200px 16% 0px 14%; */
     row-gap: 0;
 }
-
 #section-hero-home  .heading-border-bottom-left {
     position: relative;
     z-index: 2;
@@ -146,6 +154,159 @@
 
 #section-hero-home .btn-action-outline {
     margin-top: 4vh;
+}
+
+@media (max-width: 575.98px) {
+    #section-hero-home {
+        padding-bottom: 30px;
+    }
+    .section-hero {
+        min-height: 620px;
+    }
+    .hero-home-overlay-image{
+        width: 700px;
+        left: -140px;
+        bottom: 50px;
+    }   
+    .hero-decor-circle {
+        top: -330px;
+        left: -300px;
+    }
+}
+@media (min-width: 736px) and (max-width: 767px) {
+    .hero-home-overlay-image{
+        width: 700px;
+        bottom: 50px;
+    }   
+    .section-hero {
+        min-height: 550px;
+    }
+    .hero-decor-circle{
+        top: -420px;
+    }
+}
+@media (min-width: 768px) {
+    .section-hero {
+        min-height: 720px;
+    }
+    .hero-home-overlay-image{
+        width: 920px;
+        left: -50px;
+    }   
+    .hero-decor-circle{
+        top: -420px;
+    }
+}
+@media (min-width: 992px) {
+    .section-hero {
+        min-height: 720px;
+    }
+    .hero-home-overlay-image{
+        width: 100%;
+        left: -50px;
+    }   
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .hero-home-overlay-image, .pg-node-id-30 {
+        width: 600px;
+        left: -85px;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .hero-home-overlay-image, .pg-node-id-30 {
+        width: 650px;
+        left: -60px;
+        bottom: 60px;
+    }
+
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .hero-home-overlay-image{
+        width: 620px;
+        left: -100px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .hero-home-overlay-image{
+        width: 1100px;
+        left: -50px;
+    }   
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 }
 
 /* Section Features */
