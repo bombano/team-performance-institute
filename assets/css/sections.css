@@ -113,15 +113,33 @@
 /* Section social networks */
 #section-social-networks {
     background-color: #172B51;
+    padding: 0;
 }
 
 #section-social-networks .grid-container {
     column-gap: 0;
+    row-gap: 0;
+    align-items: center;
 }
 
 #section-social-networks p {
     text-align: center;
     color: #A5AFC1;
+}
+#section-social-networks .grid-container>.grid-column{
+    display: flex;
+    align-items: center;
+}
+#section-social-networks .grid-container>.grid-column:not(:first-child){
+    position: relative;
+}
+#section-social-networks .grid-container>.grid-column:not(:first-child):after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #00000000 0%, #0B1525 66%, #0C1628 100%) 0% 0% no-repeat padding-box;
+    z-index: 2;
 }
 
 /*Responsive*/
