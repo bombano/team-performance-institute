@@ -1,7 +1,7 @@
 /* **************Sections and sections elements************** */
 /* General */
 .section-wrapper {
-    padding: 150px 0;
+    padding: 70px 15px;
     position: relative;
 }
 .section-wrapper-small{
@@ -137,13 +137,14 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- }
-
+    .section-wrapper {
+        padding: 150px 0;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
-
 
 @media (min-width: 1440px) {
     /* Hero */

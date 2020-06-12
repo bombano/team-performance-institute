@@ -273,8 +273,8 @@ hr.separator-white{
     margin-top: 20px;
     padding: 15px;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
 .media .media-body {
@@ -375,6 +375,14 @@ footer {
     .navbar-nav .nav-link{
         font-size: 0.7rem;
     }
+
+    /*Media*/
+    .media {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+  
 }
 
 /* Large devices (desktops, 992px and up) */

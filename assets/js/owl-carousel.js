@@ -21,23 +21,19 @@ function initOwlCarousel(){
     $('#carousel-featured-courses').owlCarousel({
         loop:true,
         margin:30,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        navText: ['','<i class="fas fa-chevron-right"></i>'],
+        nav:false,
+        //autoplay:true,
+        /*autoplayTimeout:5000,
+        autoplayHoverPause:true,*/
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
-                nav:true
-            },
-            768:{
                 items:2,
-                nav:true,
+                nav:false,
             },
             1200:{
-                items:3,
-                nav:false,
+                items:2,
+                stagePadding: 100,
             },
         }
     });
