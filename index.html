@@ -14,15 +14,11 @@
         <link rel="stylesheet" href="assets/css/home.css">
         <link rel="stylesheet" href="assets/css/custom.css">
     </head>
-
     <body>
         <header>
             <nav class="navbar navbar-expand-md fixed-top">
-                <a class="navbar-brand" href="/"> <img src="assets/images/logo-team-performance-institute.svg"
-                        alt="Team Performance Institute"> </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="/"> <img src="assets/images/logo-team-performance-institute.svg" alt="Team Performance Institute"> </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -119,81 +115,93 @@
                 </div>
                 <img src="assets/images/decor/decor-arrow-red.svg" alt="" class="decor-bottom-right">
             </section>
-            <section class="section-wrapper-small container-fluid" id="section-leaders">
-                <div class="grid-container grid-md-c2">
-                    <div class="section-heading grid-column">
-                        <h4 class="section-subtitle-left">Meet your next inspiring and empowering</h4>
-                        <h1 class="section-title-left">First-Class Leaders</h1>
-                        <hr class="left-separator">
-                     </div>
-                    <div class="grid-column px-0">
-                        <div class="team-slider slider" id="slider-img-leaders">
-                            <div class="slider-for-background slide-item active" data-index="0">
-                                <img src="assets/images/background-leader-1.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="slider-for-background slide-item" data-index="1">
-                                <img src="assets/images/background-leader-2.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="slider-for-background slide-item" data-index="2">
-                                <img src="assets/images/background-leader-3.png" alt="" class="img-fluid">
+            <!-- Section Leaders -->
+            <section class="section-leaders section-wrapper-small container-fluid position-relative" id="section-leaders">
+                <div class="team-slider-content container grid-container grid-md-c2">
+                    <div class="team-slider-content-grid">
+                        <!-- Section Title -->
+                        <div class="section-heading">
+                            <h4 class="section-subtitle-left">Meet your next inspiring and empowering</h4>
+                            <h1 class="section-title-left">First-Class Leaders</h1>
+                            <hr class="left-separator">
+                        </div>
+                        <!--. Section Title -->
+                        <!-- Item description -->
+                        <div class="grid-column mt-5" id="description-wrapper">
+                            <div class="team-slider slider" id="slider-text-leaders">
+                                <div class="slide-item active" data-index="0">
+                                    <h4 class="text-white">John Sánchez</h4>
+                                    <p class="text-white">
+                                            Jon is a graduate of the U.S. Naval Academy and served as an officer in the U.S. 
+                                            Navy SEAL Teams. With over 15 years of experience in sales and executive corporate management, 
+                                            Jon has conducted keynote speaking, executive coaching, and team building engagements for organizations across the United States and around the world. </p>
+                                </div>
+                                <div class="slide-item" data-index="1">
+                                    <h4 class="text-white">Bridget Ruiz</h4>
+                                    <p class="text-white">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut expedita odit eaque, quidem fugit voluptates distinctio nihil officia quae unde nesciunt fuga perspiciatis 
+                                        dignissimos debitis cupiditate fugiat ullam doloribus aliquam. </p>
+                                </div>
+                                <div class="slide-item" data-index="2">
+                                    <h4 class="text-white">Laura Maasdam</h4>
+                                    <p class="text-white">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, ad odit ut molestiae quo incidunt labore laudantium modi quisquam, similique esse eos magni, 
+                                        iusto tenetur aperiam perspiciatis culpa eveniet! Eaque! </p>
+                                </div>
                             </div>
                         </div>
+                        <!--. Item description -->
                     </div>
                 </div>
-                <div class="grid-container grid-md-c2" id="slider-wrapper">
-                    <div class="grid-column" id="description-wrapper">
-                        <div class="team-slider slider" id="slider-text-leaders">
-                            <div class="slide-item active" data-index="0">
-                                <h4 class="text-white">John Sánchez</h4>
-                                <p class="text-white">
-                                    Jon is a graduate of the U.S. Naval Academy and served as an officer in the U.S. 
-                                    Navy SEAL Teams. With over 15 years of experience in sales and executive corporate management, 
-                                    Jon has conducted keynote speaking, executive coaching, and team building engagements for organizations across the United States and around the world. </p>
-                            </div>
-                            <div class="slide-item"  data-index="1">
-                                <h4 class="text-white">Bridget Ruiz</h4>
-                                <p class="text-white">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut expedita odit eaque, quidem fugit voluptates distinctio nihil officia quae unde nesciunt fuga perspiciatis 
-                                dignissimos debitis cupiditate fugiat ullam doloribus aliquam. </p>
-                            </div>
-                            <div class="slide-item"  data-index="2">
-                                <h4 class="text-white">Laura Maasdam</h4>
-                                <p class="text-white">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, ad odit ut molestiae quo incidunt labore laudantium modi quisquam, similique esse eos magni, 
-                                iusto tenetur aperiam perspiciatis culpa eveniet! Eaque! </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-column">
-                        <div class="team-slider slider-navs grid-container grid-md-c3">
+                <div class="team-slider-overflow grid-container grid-md-c2" id="slider-wrapper">
+                    <div class="team-slider-column"></div>
+                    <div class="team-slider-column grid-column position-relative">
+                        <!-- Nav -->
+                        <div class="team-slider slider-navs grid-md-c3 z-index-2">
                             <div class="slide-nav active" data-index="0">
-                                <div class="slide-overlay">
-                                </div>
+                                <div class="slide-overlay"></div>
                                 <div class="slide-text">
                                     <h5 class="text-white">John Sánchez</h5>
                                     <p class="text-white">Founder & CEO</p>
                                 </div>
                             </div>
                             <div class="slide-nav" data-index="1">
-                                <div class="slide-overlay">
-                                </div>
+                                <div class="slide-overlay"></div>
                                 <div class="slide-text">
                                     <h5 class="text-white">Bridget Ruiz</h5>
                                     <p class="text-white">Executive Performance Coach</p>
                                 </div>
                             </div>
-                            <div class="slide-nav" data-index="2" >
-                                <div class="slide-overlay">
-                                </div>
+                            <div class="slide-nav" data-index="2">
+                                <div class="slide-overlay"></div>
                                 <div class="slide-text">
                                     <h5 class="text-white">Laura Maasdam</h5>
                                     <p class="text-white">Executive Performance Coach</p>
-                                </div>                             
-                            </div>                         
+                                </div>                                 
+                            </div>                             
                         </div>
+                        <a href="/team" class="team-slider-link link-default z-index-2 position-absolute" target="_self">
+                            View all </a>
+                        <!--. Nav -->
+                        <!-- Images -->
+                        <div class="team-slider-imgs grid-column px-0 z-index-1">
+                            <div class="team-slider slider" id="slider-img-leaders">
+                                <div class="slider-for-background slide-item active" data-index="0">
+                                    <div class="team-slider-img" style="background-image: url('assets/images/photo-team-one@2x.jpg') ;"></div>
+                                </div>
+                                <div class="slider-for-background slide-item" data-index="1">
+                                    <div class="team-slider-img" style="background-image: url('assets/images/background-leader-2.png') ;"></div>
+                                </div>
+                                <div class="slider-for-background slide-item" data-index="2">
+                                    <div class="team-slider-img" style="background-image: url('assets/images/background-leader-3.png') ;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--. Images -->
                     </div>
                 </div>
             </section>
+            <!--. Section Leaders -->
             <section class="container section-wrapper" id="section-steps">
                 <h4 class="section-subtitle">3 steps to</h4>
                 <h1 class="section-title">Start your transformation</h1>
@@ -250,7 +258,7 @@
                                     corporate board room, Jon is a proven team-builder. I know from personal experience
                                     though partnering with Jon that he inspires the best in others in driving individual and
                                     team performance. He epitomizes leadership, teamwork, and values.”
-                                </blockquote>
+</blockquote>
                                 <cite>
                                     - General Stanley McChrystal </cite>
                             </div>
@@ -263,7 +271,7 @@
                                     corporate board room, Jon is a proven team-builder. I know from personal experience
                                     though partnering with Jon that he inspires the best in others in driving individual and
                                     team performance. He epitomizes leadership, teamwork, and values.”
-                                </blockquote>
+</blockquote>
                                 <cite>
                                     - General Stanley McChrystal </cite>
                             </div>
@@ -276,7 +284,7 @@
                                     corporate board room, Jon is a proven team-builder. I know from personal experience
                                     though partnering with Jon that he inspires the best in others in driving individual and
                                     team performance. He epitomizes leadership, teamwork, and values.”
-                                </blockquote>
+</blockquote>
                                 <cite>
                                     - General Stanley McChrystal </cite>
                             </div>
@@ -344,23 +352,21 @@
                 <div class="grid-container container">
                     <div class="grid-column">
                         <h6 class="section-title-left">Self-assessment question lorem</h6>
-                        <h3 class="rw-sentence section-title-left">
-                            <div class="rw-words rw-words-1">
+                        <h3 class="rw-sentence section-title-left"> <div class="rw-words rw-words-1">
                                 <span class="border-bottom-white">Is your team struggling to keep the pace?</span>
                                 <span class="border-bottom-white">Integer commodo odio vitae enim?</span>
                                 <span class="border-bottom-white">Lorem ipsum dolor sit amet, consectetur?</span>
                                 <span class="border-bottom-white">Is your team struggling to keep the pace?</span>
                                 <span class="border-bottom-white">Integer commodo odio vitae enim pellentesque?</span>
                                 <span class="border-bottom-white">Lorem ipsum dolor sit amet, consectetur?</span>
-                            </div>
-                        </h3>
+                            </div> </h3>
                         <p class="section-description">
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                             id est laborum. Excepteur sint occaecat cupidatat non. </p>
                         <button type="button" class="btn btn-outline-secondary">Start test now</button>
                     </div>
                     <div class="grid-column">
-                    </div>
+</div>
                 </div>
             </section>
             <section class="section-wrapper-small" id="section-cta">
@@ -385,11 +391,11 @@
                         <p class="">@teamperformanceinstitute</p>
                     </div>
                     <div class="grid-column">
-                    </div>
+</div>
                     <div class="grid-column">
-                    </div>
+</div>
                     <div class="grid-column">
-                    </div>
+</div>
                 </div>
             </section>
         </main>
@@ -426,14 +432,10 @@
                 <div class="grid-column footer-column">
                     <button type="button" class="btn btn-outline-secondary">Contact us</button>
                     <div class="footer-social-networks list-group-horizontal">
-                        <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="social-network-link"> <i
-                                class="fab fa-facebook-square"></i> </a>
-                        <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="social-network-link">
-                            <i class="fab fa-instagram"></i> </a>
-                        <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" class="social-network-link"> <i
-                                class="fab fa-linkedin"></i> </a>
-                        <a href="https://twitter.com/" target="_blank" title="Twitter" class="social-network-link"> <i
-                                class="fab fa-twitter"></i> </a>
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="social-network-link"> <i class="fab fa-facebook-square"></i> </a>
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="social-network-link"> <i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/" target="_blank" title="Linkedin" class="social-network-link"> <i class="fab fa-linkedin"></i> </a>
+                        <a href="https://twitter.com/" target="_blank" title="Twitter" class="social-network-link"> <i class="fab fa-twitter"></i> </a>
                     </div>
                     <p class="footer-copyright">
                         © 2020 Team Performance Institute. All rights
@@ -450,5 +452,4 @@
         <script src="assets/js/owl-carousel.js"></script>
         <script src="assets/js/init.js"></script>
     </body>
-
 </html>
