@@ -1,7 +1,7 @@
 .rw-sentence{
 	position: relative;
 }
-.desingforlife-head span{
+.desingforlife-head .r-word{
 	color: #444;
 	white-space: nowrap;
 	font-size: 200%;
@@ -10,38 +10,38 @@
 .rw-words{
 	display: inline;
 }
-.rw-words span{
+.rw-words .r-word{
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
 	width: 100%;
 }
-.rw-words-1 span{
+.rw-words-1 .r-word{
 	animation: rotateWordsFirst 18s linear infinite 0s;
 }
-.rw-words-2 span{
+.rw-words-2 .r-word{
 	animation: rotateWordsSecond 18s linear infinite 0s;
 }
-.rw-words span:nth-child(2) { 
+.rw-words .r-word:nth-child(2) { 
 	animation-delay: 3s; 
 }
-.rw-words span:nth-child(3) { 
+.rw-words .r-word:nth-child(3) { 
 	animation-delay: 6s; 
 }
-.rw-words span:nth-child(4) { 
+.rw-words .r-word:nth-child(4) { 
 	animation-delay: 9s; 
 }
-.rw-words span:nth-child(5) { 
+.rw-words .r-word:nth-child(5) { 
 	animation-delay: 12s; 
 }
-.rw-words span:nth-child(6) {  
+.rw-words .r-word:nth-child(6) {  
 	animation-delay: 15s; 
 }
 @keyframes rotateWordsFirst {
     0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
-    8% { opacity: 1; height: 60px; }
-    19% { opacity: 1; height: 60px; }
-	25% { opacity: 0; height: 60px; }
+    8% { opacity: 1; height: calc((1.375rem + 1.25vw) ); }
+    19% { opacity: 1; height: calc(((1.375rem + 1.25vw) * 2 ) + ((1.375rem + 1.25vw) * 1.2) ) ;}
+	25% { opacity: 0; height: calc(((1.375rem + 1.25vw) * 2 ) + ((1.375rem + 1.25vw) * 1.2) ) ; }
     100% { opacity: 0; }
 }
 @keyframes rotateWordsSecond {
