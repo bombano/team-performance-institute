@@ -2,15 +2,19 @@
 .z-index-1 {
     z-index: 1;
 }
+
 .z-index-2 {
     z-index: 2;
 }
+
 .z-index-3 {
     z-index: 3;
 }
+
 .z-index-4 {
     z-index: 4;
 }
+
 .z-index-5 {
     z-index: 5;
 }
@@ -43,7 +47,6 @@
     margin-bottom: 50px;
 }
 
-
 .border-bottom-white:after {
     border-top: 5px solid #ffffff;
     display: block;
@@ -63,15 +66,17 @@
 }
 
 .hero-tile-small,
-.hero-tile-big  {
+.hero-tile-big {
     font-family: 'ProximaNova-Black', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     fill: white;
     font-weight: 900;
 }
+
 text.hero-tile-small {
     font-size: 30%;
 }
+
 text.hero-tile-big {
     font-size: 100%;
 }
@@ -110,6 +115,7 @@ text.hero-tile-big {
     width: 730px;
     height: 730px;
 }
+
 .hero-decor-arrow {
     position: absolute;
     top: 130px;
@@ -146,6 +152,7 @@ text.hero-tile-big {
     /* padding: 200px 16% 0px 14%; */
     row-gap: 0;
 }
+
 #section-hero-home  .heading-border-bottom-left {
     position: relative;
     z-index: 2;
@@ -160,60 +167,71 @@ text.hero-tile-big {
     #section-hero-home {
         padding-bottom: 30px;
     }
+
     .section-hero {
         min-height: 620px;
     }
-    .hero-home-overlay-image{
+
+    .hero-home-overlay-image {
         width: 700px;
         left: -140px;
         bottom: 50px;
-    }   
+    }
+
     .hero-decor-circle {
         top: -330px;
         left: -300px;
     }
 }
+
 @media (min-width: 736px) and (max-width: 767px) {
-    .hero-home-overlay-image{
+    .hero-home-overlay-image {
         width: 700px;
         bottom: 50px;
-    }   
+    }
+
     .section-hero {
         min-height: 550px;
     }
-    .hero-decor-circle{
+
+    .hero-decor-circle {
         top: -420px;
     }
 }
+
 @media (min-width: 768px) {
     .section-hero {
         min-height: 720px;
     }
-    .hero-home-overlay-image{
+
+    .hero-home-overlay-image {
         width: 920px;
         left: -50px;
-    }   
-    .hero-decor-circle{
+    }
+
+    .hero-decor-circle {
         top: -420px;
     }
 }
+
 @media (min-width: 992px) {
     .section-hero {
         min-height: 720px;
     }
-    .hero-home-overlay-image{
+
+    .hero-home-overlay-image {
         width: 100%;
         left: -50px;
-    }   
+    }
 }
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    .hero-home-overlay-image, .pg-node-id-30 {
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-home-overlay-image {
         width: 600px;
         left: -85px;
     }
@@ -224,8 +242,7 @@ text.hero-tile-big {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
+  and (orientation: portrait) {
 }
 
 /* Landscape */
@@ -233,22 +250,20 @@ text.hero-tile-big {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-    .hero-home-overlay-image, .pg-node-id-30 {
+  and (orientation: landscape) {
+    .hero-home-overlay-image {
         width: 650px;
         left: -60px;
         bottom: 60px;
     }
-
 }
-/* ----------- iPhone X ----------- */
 
+/* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
+  and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 /* Portrait */
@@ -256,12 +271,11 @@ text.hero-tile-big {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-    .hero-home-overlay-image{
+  and (orientation: portrait) {
+    .hero-home-overlay-image {
         width: 620px;
         left: -100px;
     }
-
 }
 
 /* Landscape */
@@ -269,48 +283,42 @@ text.hero-tile-big {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
+  and (orientation: landscape) {
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
-
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-    .hero-home-overlay-image{
+    .hero-home-overlay-image {
         width: 1100px;
         left: -50px;
-    }   
+    }
 }
 
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-
 }
 
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106 */
 @media only screen 
   and (min-device-width: 1366px) 
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
-
 }
 
 /* Section Features */
-
 #section-features {
     background-color: #ECEEF2;
     position: relative;
@@ -321,7 +329,6 @@ text.hero-tile-big {
     column-gap: 30px;
     position: relative;
     z-index: 9;
-    padding-left: 30px;
     margin-top: 70px;
 }
 
@@ -357,6 +364,7 @@ text.hero-tile-big {
     left: -80px;
     filter: blur(11px);
 }
+
 #section-features .decor-bottom-right {
     position: absolute;
     bottom: 0;
@@ -365,7 +373,11 @@ text.hero-tile-big {
     height: auto;
 }
 
-/* Section leaders */
+/* 
+ *
+ * Section leaders 
+ *
+ */
 #section-leaders {
     background-color: #11203D;
     padding-bottom: 0;
@@ -376,10 +388,11 @@ text.hero-tile-big {
     color: #FFFFFF;
 }
 
-#section-leaders #slider-wrapper>.team-slider{
+#section-leaders #slider-wrapper>.team-slider {
     position: relative;
 }
-#section-leaders #slider-wrapper>.slider-navs{
+
+#section-leaders #slider-wrapper>.slider-navs {
     position: absolute;
     z-index: 999;
     bottom: 90px;
@@ -388,42 +401,44 @@ text.hero-tile-big {
 .leader-description {
     color: #A5AFC1;
 }
-.team-slider.slider{
+.team-slider{
+    display: grid;
+    row-gap: 30px;
+}
+.team-slider.slider {
     display: grid;
     grid-auto-rows: 1fr;
     row-gap: 20px;
 }
-.team-slider .slide-item{
+
+.team-slider .slide-item {
     transition: opacity .15s linear;
 }
-.slider-navs{
-    display: flex;
-    justify-content: center;
+
+.slide-nav:hover {
+    justify-items: stretch;
 }
-.slide-nav:hover{
-    cursor: pointer;
-}
-.slide-item:not(.active){
+
+.slide-item:not(.active) {
     display: none;
     opacity: 0;
 }
+
 .team-slider .slide-nav {
-    min-height: 180px;
-    max-height: 180px;
-    width: 160px !important;
-    max-width: 160px !important;
-    margin-left: 15px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     vertical-align: bottom;
-    display: flex !important;
+    display: flex;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-    border-radius: none;
     position: relative;
+    padding: 15px;
     border-radius: 5px;
+    min-height: 240px;
+    max-width: 200px;
+    min-width: 130px;
 }
 
 .team-slider .slide-nav.active {
@@ -442,6 +457,55 @@ text.hero-tile-big {
     background-image: url("../images/leader-3.jpg");
 }
 
+.section-leaders {
+    min-height: 840px;
+    padding-top: 120px;
+}
+.team-slider-content{
+    height: 100%;
+}
+.team-slider-content-grid{
+    display: grid;
+    justify-content: space-between;
+}
+.team-slider-imgs {
+    width: 100%;
+    position: absolute;
+}
+.team-slider-img{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 800px;
+}
+.team-slider-overflow{
+    display: grid;
+    row-gap: 30px;
+    column-gap: 60px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+.team-slider.slider-navs{
+    column-gap: 20px;
+    padding-bottom: 80px;
+}
+.team-slider-column{
+    display: flex;
+    align-items: flex-end;
+    max-width: 100vw;
+}
+.team-slider{
+    width: 100%;
+}
+.team-slider-link {
+    bottom: 0px;
+    text-align: right;
+    width: 90%;
+    padding: 30px;
+}
 .slide-overlay {
     width: 100%;
     height: 45%;
@@ -462,9 +526,122 @@ text.hero-tile-big {
 
 .slide-text p {
     line-height: 1;
+    margin-bottom: 0px;
 }
 
-/* Section steps */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 577px) {
+
+    .section-leaders{
+        min-height: auto;
+    }
+    .team-slider-overflow{
+        margin-top: 40px;
+        position: relative;
+        display: block;
+    }
+    .team-slider.slider-navs {
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: scroll;
+    }
+    .team-slider-content{
+        display: block;
+    }
+    .team-slider-imgs {
+        display: none;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .section-leaders{
+        min-height: auto;
+    }
+    .team-slider-overflow{
+        margin-top: 40px;
+        position: relative;
+        display: block;
+    }
+    .team-slider.slider-navs {
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: scroll;
+    }
+    .team-slider-content{
+        display: block;
+    }
+    .team-slider-imgs {
+        display: none;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .slide-text p {
+        display: none;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .section-leaders{
+        min-height: auto;
+    }
+    .team-slider-overflow{
+        margin-top: 40px;
+        position: relative;
+        display: block;
+    }
+    .team-slider.slider-navs {
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: scroll;
+    }
+    .team-slider-content{
+        display: block;
+    }
+    .team-slider-imgs {
+        display: none;
+    }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+
+/* 
+ * 
+ * Section steps 
+ * 
+ */
 #section-steps .grid-container {
     margin-top: 100px;
     margin-bottom: 70px;
@@ -475,7 +652,7 @@ text.hero-tile-big {
     color: #172B51;
 }
 
-#section-steps .card:hover{
+#section-steps .card:hover {
     box-shadow: 0px 7px 75px #1D36654D;
 }
 
@@ -518,24 +695,28 @@ text.hero-tile-big {
 #section-testimonials .section-title-left {
     color: #11203D;
 }
-#section-testimonials .owl-carousel{
+
+#section-testimonials .owl-carousel {
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
 }
-#section-testimonials .owl-carousel-item{
+
+#section-testimonials .owl-carousel-item {
     position: relative;
 }
 
-#section-testimonials .owl-carousel-item:before{
+#section-testimonials .owl-carousel-item:before {
     position: absolute;
     content: "";
     z-index: 0;
 }
-#section-testimonials .owl-carousel-img{
+
+#section-testimonials .owl-carousel-img {
     display: none;
 }
-#section-testimonials .owl-carousel-description{
+
+#section-testimonials .owl-carousel-description {
     position: relative;
     top: 0;
     left: 0;
@@ -547,7 +728,8 @@ text.hero-tile-big {
     margin-top: -10px;
     padding: 50px 20px;
 }
-#section-testimonials .owl-carousel-description>blockquote{
+
+#section-testimonials .owl-carousel-description>blockquote {
     color: #FFFFFF;
     position: relative;
     z-index: 1;
@@ -555,17 +737,20 @@ text.hero-tile-big {
     margin-bottom: 5px;
 }
 
-#section-testimonials .owl-carousel-description>cite{
+#section-testimonials .owl-carousel-description>cite {
     color: #A5AFC1;
 }
-#section-testimonials .owl-carousel>.owl-nav>button>svg{
+
+#section-testimonials .owl-carousel>.owl-nav>button>svg {
     font-size: 20px;
     color: #11203D;
 }
-#section-testimonials .owl-nav{
+
+#section-testimonials .owl-nav {
     text-align: center;
 }
-#section-testimonials .owl-nav>button{
+
+#section-testimonials .owl-nav>button {
     padding: 5px 20px !important;
 }
 
@@ -575,7 +760,7 @@ text.hero-tile-big {
     padding-top: 80px;
 }
 
-#section-services .link-default{
+#section-services .link-default {
     float: right;
 }
 
@@ -587,20 +772,23 @@ text.hero-tile-big {
     filter: blur(12px);
     z-index: 2;
 }
-#section-services .media{
+
+#section-services .media {
     position: relative;
 }
-/*#section-services .media:before{
+
+/* #section-services .media:before{
     position: absolute;
     top: -30px;
     left: -30px;
     width: 110px;
     content: url(/assets/images/decor/decor-circle-s.svg);
     z-index: 0;
-}*/
-#section-services .media-img{
+} */
+#section-services .media-img {
     position: relative;
 }
+
 /* Section action */
 #section-action {
     min-height: 400px;
@@ -630,25 +818,25 @@ text.hero-tile-big {
     filter: blur(11px);
 }
 
-
 /* Responsive */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
-    #section-testimonials .owl-carousel-item:before{
+    #section-testimonials .owl-carousel-item:before {
         height: 100%;
         width: 80%;
         top: 0;
         background: transparent linear-gradient(90deg, #11203D00 0%, #11203D80 37%, #11203D 71%, #11203D 100%) 0% 0% no-repeat padding-box;
     }
-    #section-testimonials .owl-carousel-img{
+
+    #section-testimonials .owl-carousel-img {
         display: block;
     }
-    #section-testimonials .owl-carousel-description{
+
+    #section-testimonials .owl-carousel-description {
         position: absolute;
         width: 70%;
         top: 20%;
@@ -662,7 +850,7 @@ text.hero-tile-big {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #section-testimonials .owl-carousel{
+    #section-testimonials .owl-carousel {
         padding-left: 0;
         padding-right: 0;
     }
@@ -670,11 +858,13 @@ text.hero-tile-big {
     #section-action .section-description {
         width: 40%;
     }
-    #section-testimonials .owl-carousel-item:before{
+
+    #section-testimonials .owl-carousel-item:before {
         width: 40%;
         left: 20%;
     }
-    #section-testimonials .owl-carousel-description{
+
+    #section-testimonials .owl-carousel-description {
         top: 80%;
         left: 25%;
         width: 80%;
@@ -682,10 +872,12 @@ text.hero-tile-big {
         margin-top: -180px;
         font-size: 1rem;
     }
-    #section-testimonials .owl-carousel-description>blockquote{
+
+    #section-testimonials .owl-carousel-description>blockquote {
         margin-bottom: 25px;
     }
-    #section-testimonials .owl-carousel-description>blockquote:before{
+
+    #section-testimonials .owl-carousel-description>blockquote:before {
         position: absolute;
         top: -30px;
         left: -30px;
@@ -693,7 +885,8 @@ text.hero-tile-big {
         content: url(/assets/images/decor/decor-quote-blue.svg);
         z-index: -1;
     }
-    /*Section leaders*/
+
+    /* Section leaders
     #section-leaders #slider-wrapper{
         position: absolute;
         bottom: 110px;
@@ -701,13 +894,13 @@ text.hero-tile-big {
     #section-leaders #description-wrapper,
     #section-leaders .section-heading{
         padding-left: 60px;
-        /*padding-top: 90px;*/
-    }
+        padding-top: 90px;
+    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #section-testimonials .owl-carousel-description{
+    #section-testimonials .owl-carousel-description {
         top: 60%;
         left: 30%;
         width: 60%;
@@ -715,10 +908,7 @@ text.hero-tile-big {
     }
 }
 
-/* 
- * Refactoring 
- */
-
+/* * Refactoring */
 /* Section */
 .c-brands--simple {
     display: grid;
