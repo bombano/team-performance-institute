@@ -156,8 +156,6 @@ hr.separator-white{
     width: 11vw;
 }
 
-
-
 /*Decors*/
 .decor{
     position: absolute;
@@ -268,26 +266,25 @@ hr.separator-white{
 }
 /*Media*/
 .media {
+    display: block;
+    text-align: center;
     background-color: #fff;
     border: solid 1px #c1c1c1;
     margin-top: 20px;
     padding: 15px;
     border-radius: 5px;
-    display: block;
-    text-align: center;
 }
 
 .media .media-body {
     padding: 0 20px;
     color:#172B51;
+    margin-top: 20px;
 }
 
 .media-img {
     align-self: center !important;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 /*Footer*/
@@ -397,14 +394,6 @@ footer .grid-container{
     .navbar-nav .nav-link{
         font-size: 0.7rem;
     }
-
-    /*Media*/
-    .media {
-        display: flex;
-        align-items: center;
-        text-align: left;
-    }
-  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -434,6 +423,20 @@ footer .grid-container{
         margin-right: 15px;
     }
     
+    /*Media*/
+    .media {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 20px 25px;
+    }
+    .media-img {
+        width: 90px;
+        height: 90px;
+    }
+    .media-body{
+        margin-top: 0;
+    }
     
     /*Tabs*/
     .tabs-container{

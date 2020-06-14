@@ -7,12 +7,6 @@
     grid-template-columns: 1fr;
 }
 
-.grid-column{
-    /*width: auto;*/
-    /*background-color: #c1c1c1;*/
-}
-
-
 .columns-q2{
     grid-column-start: span 2;
 }
@@ -25,12 +19,12 @@
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) { 
     .grid-md-c2{
-        grid-template-columns: repeat(2,minmax(49.5%, 1fr));
-        column-gap: 1%;
+        grid-template-columns: repeat(2,minmax(200px, 1fr));
+        column-gap: 50px;
     }
     .grid-md-c3{
-        grid-template-columns: repeat(3,minmax(32.6666666667%, 1fr));
-        column-gap: 1%;
+        grid-template-columns: repeat(3,minmax(200px, 1fr));
+        column-gap: 30px;
     }
     .grid-md-c4{
         grid-template-columns: repeat(4,minmax(24.25%, 1fr));
