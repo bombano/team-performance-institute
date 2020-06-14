@@ -29,6 +29,7 @@
     margin-top: -60px;
     background-color: #0C1628;
     min-height: 500px;
+    position: relative;
 }
 
 .section-hero>.grid-container {
@@ -70,6 +71,15 @@
     right: 0;
     width: 120px;
     height: 80px;
+}
+.hero-decor-blur-circle {
+    position: absolute;
+    z-index: 0;
+    bottom: -110px;
+    right: -80px;
+    width: 220px;
+    height: 220px;
+    filter: blur(13px);
 }
 
 /* Headings */

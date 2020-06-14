@@ -140,6 +140,16 @@
     color:#A5AFC1;
 }
 
+#section-4 .decor-top-left {
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    left: -100px;
+    width: 220px;
+    height: 220px;
+    filter: blur(13px);
+}
+
 
 /*Responsive breakpoints*/
 
