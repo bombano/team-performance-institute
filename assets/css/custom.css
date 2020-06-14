@@ -161,6 +161,9 @@ hr.separator-white{
     position: absolute;
 }
 
+.decor-blur{
+    display: none;
+}
 
 /*Navbar*/
 .navbar-nav .nav-link {
@@ -168,6 +171,7 @@ hr.separator-white{
     font:  1rem 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link.active{
@@ -398,6 +402,12 @@ footer .grid-container{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    /*Decor*/
+    .decor-blur{
+        display: initial;
+        position:absolute
+    }
+    
     /*navbar*/
     .navbar.fixed-top{
         padding-left: 60px;

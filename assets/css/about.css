@@ -22,7 +22,7 @@
 #section-1 .section-description{
     padding-left: 25px;
 }
-#section-1 img:not(.decor){
+#section-1 img:not(.decor-blur){
     border-radius: 5px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

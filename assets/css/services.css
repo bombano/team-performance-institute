@@ -48,6 +48,7 @@
 
 #section-1 .tab-content .tab-content-title{
     color:#172B51;
+    margin-bottom: 30px;
 }
 #section-1  .tab-content>.tab-pane {
     padding: 30px;
@@ -94,6 +95,21 @@
 #carousel-featured-courses .owl-carousel>.owl-nav>button>svg{
     font-size: 20px;
     color: #11203D;
+}
+#carousel-featured-courses .card.featured{
+    position: relative;
+}
+#carousel-featured-courses .card.featured:before{
+    position: absolute;
+    content:"Featured";
+    top: 20px;
+    left: 20px;
+    background-color: #11203D;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 100px;
+    font-weight: 600px;
+
 }
 /*#carousel-featured-courses .owl-nav{
     text-align: center;
@@ -160,6 +176,9 @@
         margin: 35px auto;
         width: 55px;
     }
+    #section-1 .tab-content .tab-content-title{
+        margin-bottom: 50px;
+    }
     #section-1 .grid-column.decor-before{
         position: relative;
     }
@@ -175,7 +194,7 @@
         grid-template-columns: 40% 60%;
     }
     #section-2 .grid-container>.grid-column:first-child{
-        padding: 60px;
+        padding: 20px 60px;
     }
     #section-3 .grid-container{
         grid-template-columns: 60% 40%;
