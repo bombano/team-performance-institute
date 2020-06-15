@@ -318,6 +318,14 @@ text.hero-tile-big {
   and (-webkit-min-device-pixel-ratio: 2) {
 }
 
+/* **************Section customers/brands************* */
+#section-customers{
+    align-items: center;
+    justify-items: center;
+    row-gap: 40px;
+}
+
+
 /* Section Features */
 #section-features {
     background-color: #ECEEF2;
@@ -855,6 +863,12 @@ text.hero-tile-big {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
+    .team-slider-content{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
     #section-testimonials .owl-carousel-item:before {
         height: 100%;
         width: 80%;
