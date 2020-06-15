@@ -168,10 +168,11 @@ hr.separator-white{
 /*Navbar*/
 .navbar-nav .nav-link {
     color: #FFFFFF;
-    font:  1rem 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+    font:  1rem 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .navbar-nav .nav-link.active{
