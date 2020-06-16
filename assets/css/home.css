@@ -490,9 +490,7 @@ text.hero-tile-big {
     min-height: 200px;
 }
 .section-leaders {
-    height: 700px;
-    min-height: 840px;
-    padding-top: 120px;
+    height: 820px;
 }
 .team-slider-content{
     height: 100%;
@@ -905,7 +903,6 @@ text.hero-tile-big {
 
     .team-slider-content{
         height: 100%;
-        position: absolute;
         left: 0;
         right: 0;
     }
