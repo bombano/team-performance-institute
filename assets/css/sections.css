@@ -152,6 +152,40 @@
     z-index: 2;
 }
 
+#section-social-networks .feed-description{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    padding: 30px 20px;  
+    display: flex;
+    align-items: center;
+}
+
+#section-social-networks .feed-icon{
+    border: solid 1px #FFFFFF;
+    border-radius: 50%;
+    padding: .5em;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+}
+#section-social-networks .feed-icon>i{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+#section-social-networks .feed-title{
+    color: #ffffff;
+    padding: 10px;
+}
+
 /*Responsive*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
