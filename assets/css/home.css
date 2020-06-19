@@ -890,6 +890,14 @@ text.hero-tile-big {
     filter: blur(11px);
 }
 
+.c-latest__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
 /* Responsive */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
